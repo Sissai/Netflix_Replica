@@ -1,0 +1,41 @@
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  /* transform: scale(1); Remove this line or set it to an initial scale */
+  margin-right: 10px;
+  transition: transform 450ms; /* Add transition property here for smooth scaling */
+}
+
+
+.row__posters {
+  display: flex; /* Use flexbox to arrange items horizontally */
+  overflow-y: hidden; /* Hide vertical overflow */
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  padding: 20px; /* Add padding around the posters */
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit (Chrome, Safari) browsers */
+}
+
+
+
+
+.row__poster:hover {
+  transform: scale(1.08); /* Apply scale transformation on hover */
+}
+.row__posterLarge {
+  max-height: 250px;
+}
+.row__posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
+.row {
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+}
+.row {
+  font-size: 10px;
+}
